@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Multicolor</title>
+    <style>
+        body{
+            background: rgb(232, 118, 232);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --pricolor: rgb(0, 128, 4);
+            --textcolor:rgb(142, 12, 12);
+            --thirdcolor:blue;
+        }
+        ul li{
+            list-style: none;
+            display:inline;
+            padding:23px;
+            color: var(--textcolor);
+          
+            
+        }
+        nav{
+            background-color: var(--pricolor);
+            padding: 25px 0;
+        }
+        ul li a{
+            color: aqua;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li> Name</li>
+                <li> Contact</li>
+                <li> Address</li>
+            
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

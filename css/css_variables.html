@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root
+        {
+            --color: green;
+            --seccolor : orange;
+            --defpad: 23px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color:var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding:var(--defpad);
+
+        }
+         ul li:first-child{
+            /* opacity: 0.4;  you can use variable defop for this also */
+            --color: red;
+            background-color: var(--color);
+            border: 7px solid var(--seccolor);
+
+         }
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis deleniti quisquam nihil architecto in asperiores veniam! Alias soluta quam nisi unde commodi consequatur reprehenderit, natus enim praesentium quasi rem ducimus sunt.
+    </div>
+</body>
+</html>

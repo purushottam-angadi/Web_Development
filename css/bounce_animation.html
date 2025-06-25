@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouce Animation</title>
+    <style>
+        .container{
+            background-color: blue;
+            height: 60vh;
+            width: 80vw;
+            position: relative;
+            overflow: hidden;
+        }
+        .ball{
+            background-color: red;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            /* animation: BallX 3s linear infinite ,
+                       BallY 1s ease-out infinite alternate ; */
+        }
+        /* @keyframes BallX{
+         from{
+                 left:0; 
+         }
+         to{
+               left:100%;    
+         }
+        }
+         @keyframes BallY{
+         from{
+            bottom:0;
+         }
+         to{
+            bottom:100%;
+         }
+        } */
+        @keyframes BallMove {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(200px) translateY(-100px);
+    }
+    50% {
+        transform: translateX(400px) translateY(0);
+    }
+    75% {
+        transform: translateX(600px) translateY(-100px);
+    }
+    100% {
+        transform: translateX(760px) translateY(0);
+    }
+}
+.ball {
+    animation: BallMove 3s linear infinite;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
