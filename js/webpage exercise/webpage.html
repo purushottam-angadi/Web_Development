@@ -7,14 +7,53 @@
     <style>
         .card{
             display:flex;
+            gap:10px;
+            border: 2px solid black;
+            width:700px;
+           
+            align-items: center;
+            margin: 5px;
+        }
+        .image img{
+            width: 200px;
+            padding: 5px;
+        }
+        .image{
+            position: relative;
+        }
+         
+        .capsule{
+           
+            position:absolute;
+            bottom:10px;
+            right:7px;
+            background-color: rgb(48, 47, 47);
+            border-radius: 3px;
+            padding: 2px;
+            margin: 2px;
+            color:white;
+            opacity: 0.9;
+        }
+
+
+        .text h1{
+            padding: 2px;
         }
     </style>
 </head>
 <body>
     <div class="container">
     <div class="card">
-        <div class="image"></div>
-        <div class="text"></div>
+
+        <div class="image">
+        <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLB6VzxANxt3dHm91HW9lLfDlxvmuA" alt="">
+        <div class="capsule">31.06</div>
+        </div>
+        <div class="text">
+           <h3>Installing VS Code &How Websites Work| Sigma Web Development</h3>
+            <p>Code with harry. 727K views . 2 months ago </p>
+        </div>
+        
     </div>
     </div>
     <script src="webpage.js"></script>
