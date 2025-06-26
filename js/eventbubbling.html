@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling</title>
+    <style>
+        .child {
+            /* background-color: aliceblue; */
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">
+                <h1>I am a child</h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("Child was clicked")
+
+        })
+        document.querySelector(".childContainer").addEventListener("click", () => {
+            e.stopPropagation()
+            alert("child Container was clicked")
+        })
+        document.querySelector(".container").addEventListener("click", () => {
+
+            alert(" container was clicked")
+        })
+        function getrandomcolor() {
+            let val1 = 0 + Math.random() * 255;
+            let val2 = 0 + Math.random() * 255;
+            let val3 = 0 + Math.random() * 255;
+            return `rgb(${val1}, ${val2}, ${val3} `
+        }
+        // let a=setInterval(() => {
+        //     document.getElementsByClassName("child")[0].style.backgroundColor = getrandomcolor()
+        // }, 3000)
+        // console.log(a) // this will give output 1 in the consolelog on chrome
+        // clearInterval(1)
+
+  setTimeout(() => {
+            document.getElementsByClassName("child")[0].style.backgroundColor = getrandomcolor()
+        }, 3000)
+
+
+    
+    </script>
+</body>
+
+</html>
