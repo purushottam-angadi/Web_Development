@@ -26,13 +26,22 @@ const greaterthanseven= (e)=>{
 console.log(newarr.filter(greaterthanseven))
 
 
-let arr2=[1,2,3,4]
-const red=(a,b) =>{
-    return a*b;
-}
+// let arr2=[1,2,3,4]
+// const red=(a,b) =>{
+//     return a*b;
+// }
 
-console.log(arr2.reduce(red))
+// console.log(arr2.reduce(red))
 
 
 let B=Array.from('PURU')
 console.log(B)
+
+
+// const red=(a,b) =>{
+//     return a*b;
+// }
+let arr3=[1,2,3,4]
+console.log(arr3.reduce((a,b) =>{
+    return a*b;
+}))
